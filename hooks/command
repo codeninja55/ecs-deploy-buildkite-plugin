@@ -250,7 +250,6 @@ function waitForDeployment() {
             return 1
         else
             # Deployment not done yet. Check again in a bit.
-            let "COUNT++"
             sleep $INTERVAL
         fi
     done
