@@ -178,7 +178,7 @@ echo "--- :ecs: Updating service for ${service_name}"
 aws ecs update-service \
   --cluster "${cluster}" \
   --service "${service_name}" \
-  --task-definition "${task_family}:${task_revision}"
+  --task-definition "${task_family}:${task_revision}" | jq '.'
 
 ############################################################
 # Script begins                                            #
