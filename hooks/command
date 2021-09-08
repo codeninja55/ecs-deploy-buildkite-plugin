@@ -225,8 +225,8 @@ function now() {
 }
 
 function waitForDeployment() {
-    TIMEOUT=${TIMEOUT:-300}
-    INTERVAL=${INTERVAL:-5}
+    TIMEOUT=${TIMEOUT:-600}
+    INTERVAL=${INTERVAL:-10}
 
     log "Started: Time=$(date), Timeout=$TIMEOUT seconds"
 
